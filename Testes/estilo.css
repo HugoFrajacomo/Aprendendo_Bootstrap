@@ -1,0 +1,26 @@
+div#cabeçalho {
+    width: 0, auto;
+    height: 75px;
+    text-align: center;
+}
+
+.logo i {
+    font-size: 60px;
+}
+
+
+div.logo {
+    float: left;
+
+}
+
+div.nome {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+
+

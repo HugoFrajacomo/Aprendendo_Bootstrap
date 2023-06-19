@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+
+    <title>Bootstrap - Jumbotron e alinhamento de imagens</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!--Font Awesome - Ícones link: https://fontawesome.com/search?m=free&o=r -->
+    <script src="https://kit.fontawesome.com/8db7abdcea.js" crossorigin="anonymous"></script>
+
+    <style type="text/css">
+
+      .marcador {
+        background: #f99d9d;
+        border: 1px solid #f94646;
+      }
+
+      .marcador-container {
+        background: #5bf946;
+        border: 1px solid #36ae26;
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="container marcador-container">
+      <div class="row">
+        <div class="marcador col-md-6 col-xl-4">
+          <h2>Bem vindo ao site</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fringilla turpis tincidunt nibh congue facilisis.
+          </p>
+          <button class="btn btn-danger mb-2">Não Click</button>
+
+        </div>
+        <div class="marcador col-md-6 col-xl-4">
+          <h2>Foi bom te ver</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fringilla turpis tincidunt nibh congue facilisis.
+          </p>
+          <button class="btn btn-info mb-2">Click Aqui</button>
+        </div>
+        <div class="marcador col-md-6 col-xl-4">
+          <h2>Te enganhei</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fringilla turpis tincidunt nibh congue facilisis.
+          </p>
+          <button class="btn btn-warning mb-2">Click neste</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br><br><br><hr>
+
+  <div class="container marcador-container"> <!-- Conteiner pode ser conteiner-fluid, desta forma ocupa todo espaçamento da tela. Somente conteiner ele tem as margens laterais -->
+
+    <h2>Largura fixa</h2>
+
+    <!-- Utilizamos somente o "col" para definir uma largura fixa entre todas as colunas-->
+
+    <div class="row">
+      <div class="marcador col">Area 1</div>
+      <div class="marcador col">Area 2</div>
+      <div class="marcador col">Area 3</div>
+      <div class="marcador col">Area 4</div>
+    </div>
+
+    <h2>Largura Automática</h2>
+
+    <!-- Utilizamos o "col-1, col-2, ..." Definimos a proporção entre a largura das colunas que se manterá  mesmo aumentando ou diminuindo a tela -->
+
+    <div class="row">
+      <div class="marcador col">Area 1</div>
+      <div class="marcador col-4">Area 2</div>
+      <div class="marcador col-6">Area 3</div>
+    </div>
+
+    <h2>Largura igual empilhada</h2>
+
+    <!--Utilizando o "col-sm, col-md, ..." Após reduzirmos a tela até a proporção escolhida as colunas ficaram empilhadas, uma em cima da outra. --> 
+
+    <div class="row">
+      <div class="marcador col-md">Area 1</div>
+      <div class="marcador col-md">Area 2</div>
+      <div class="marcador col-md">Area 3</div>
+    </div>
+
+
+    <h2>Ordenando</h2>
+
+    <!--Utilizando o "order-1, order-2,..." Após utilizar o order, podemos definir qual container aparecerá primeiro -->
+
+    <div class="row">
+      <div class="marcador col-md-3 order-2">Area 1</div>
+      <div class="marcador col-md-5 order-3">Area 2</div>
+      <div class="marcador col-md-4 order-1">Area 3</div>
+    </div>
+
+    <h2>Offset</h2>
+
+    <!--Utilizando o "offset-<tamanho>-<qtd>" Após seu uso criamos um espaçamento entre os containers -->
+
+    <div class="row">
+      <div class="marcador col-md-6 offset-md-3">Login</div>
+    </div>
+
+    <h2>Offset múltiplos alinhamentos</h2>
+
+    <div class="row">
+      <div class="marcador col-md-3">Conteúdo 1</div>
+      <div class="marcador col-md-3 offset-md-6">Conteúdo 2</div>
+    </div>
+
+    <h2>Aninhamento</h2>
+
+    <!--Posso utilizar uma row dentro de uma row, desta forma terei um novo grid com no máximo 12 grids, sendo o maior grid (12) do tamanho exato ai tamanho definido pelo grid da row anterior -->
+
+    <div class="row">
+      <div class="col-md-6" style="border: 1px solid rgb(40, 3, 173);">
+        col-md-6
+        <div class="row">
+          <div class="col-md-6 marcador">Conteúdo 1</div>
+          <div class="col-md-4 marcador">Conteúdo 2</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  </body>
+</html>
